@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Facebook</string>
+    <string name="usernameOrEmail">Username or Email address</string>
+    <string name="password">Password</string>
+    <string name="loginBtn">Log in</string>
+    <string name="forgotPassword">Forgotten your password ?</string>
+    <string name="loginHelp">Click here</string>
+    <string name="or">OR</string>
+    <string name="newAccount">Create new account</string>
+<!--    image description -->
+    <string name="facebookImage">Facebook Image</string>
+</resources>
