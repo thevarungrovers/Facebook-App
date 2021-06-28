@@ -7,6 +7,14 @@
     <string name="loginHelp">Click here</string>
     <string name="or">OR</string>
     <string name="newAccount">Create new account</string>
-<!--    image description -->
+    <!--    image description -->
     <string name="facebookImage">Facebook Image</string>
+<!-- activity_register -->
+    <string name="input_name">Full Name</string>
+    <string name="input_email">Email Address</string>
+    <string name="input_phone">Phone Number</string>
+    <string name="input_password">Enter Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="input_dob">Date of Birth</string>
+
 </resources>

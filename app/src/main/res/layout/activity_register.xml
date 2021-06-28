@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newAccount"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            />
+
+        <EditText
+            android:id="@+id/name_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:padding="8sp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="@string/input_name"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edittext_fields"
+            android:layout_margin="15sp"
+            android:autofillHints="false"
+            />
+
+        <EditText
+            android:id="@+id/email_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:textSize="20sp"
+            android:padding="8sp"
+            android:textColor="@color/black"
+            android:hint="@string/input_email"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edittext_fields"
+            android:layout_margin="15sp"
+            android:autofillHints="false"
+            />
+
+        <EditText
+            android:id="@+id/phone_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:textSize="20sp"
+            android:padding="8sp"
+            android:textColor="@color/black"
+            android:hint="@string/input_phone"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edittext_fields"
+            android:layout_margin="15sp"
+            android:autofillHints="false"
+            />
+
+        <EditText
+            android:id="@+id/password_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:padding="8sp"
+            android:textColor="@color/black"
+            android:hint="@string/input_password"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edittext_fields"
+            android:layout_margin="15sp"
+            android:autofillHints="false"
+            />
+
+        <TextView
+            android:id="@+id/dob_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="8sp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/black"
+            android:text="@string/input_dob"
+            />
+
+        <DatePicker
+            android:id="@+id/dob_input_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="calendar"
+            android:layout_margin="20sp"
+            android:calendarTextColor="@color/black"
+            android:background="@color/white"
+            android:theme="@style/Theme.AppCompat.Light"
+            />
+
+        <Button
+            android:id="@+id/create_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:padding="4sp"
+            android:layout_margin="10sp"
+            />
+
+
+
+</LinearLayout>
+
+        </ScrollView>
