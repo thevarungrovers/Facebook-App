@@ -14,10 +14,8 @@
 
 ### Screenshot
 
- -Login Page
 ![](./screenshots/login.jpg)
- 
- -Create New Account Page
+
 ![](./screenshots/create_account.jpg)
 
 ### Requirements
@@ -34,6 +32,6 @@
 
 ### Author
 
-- Website - [Add your name here](https://thevarungrovers.vercel.app)
+- Website - [Varun Grover](https://thevarungrovers.vercel.app)
 - GitHub - [@thevarungrovers](https://www.github.com/thevarungrovers)
 - Codepen - [@thevarungrovers](https://www.codepen.io/thevarungrovers)
