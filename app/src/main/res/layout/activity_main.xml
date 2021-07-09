@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white"
-    >
-<!-- facebook logo -->
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <!-- facebook logo -->
         <ImageView
             android:id="@+id/logo_image_id"
             android:layout_width="wrap_content"
@@ -16,8 +20,8 @@
             android:layout_marginTop="40sp"
             />
 
-<!-- login section -->
-<!-- phone or email -->
+        <!-- login section -->
+        <!-- phone or email -->
         <EditText
             android:id="@+id/username_input_id"
             android:layout_width="match_parent"
@@ -32,7 +36,7 @@
             android:padding="15sp"
             android:autofillHints="false"
             />
-    <!-- password -->
+        <!-- password -->
         <EditText
             android:id="@+id/password_input_id"
             android:layout_width="match_parent"
@@ -47,92 +51,94 @@
             android:padding="15sp"
             android:autofillHints="false"
             />
-    <!-- login button -->
-    <Button
-        android:id="@+id/login_btn_id"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:text="@string/loginBtn"
-        android:background="@drawable/login_btn"
-        android:textSize="15sp"
-        />
+        <!-- login button -->
+        <Button
+            android:id="@+id/login_btn_id"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/loginBtn"
+            android:background="@drawable/login_btn"
+            android:textSize="15sp"
+            />
 
-<!-- help -->
-    <LinearLayout
-        android:id="@+id/forgotPassword_container_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="10sp"
-
-        >
-        <TextView
-            android:id="@+id/forgotPassword_text_id"
+        <!-- help -->
+        <LinearLayout
+            android:id="@+id/forgotPassword_container_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/forgotPassword"
-            android:textColor="@color/black"
-            />
-        <TextView
-            android:id="@+id/clickHere_text_id"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+
+            >
+            <TextView
+                android:id="@+id/forgotPassword_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgotPassword"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/clickHere_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loginHelp"
+                android:textColor="@color/blue_shade"
+                />
+        </LinearLayout>
+
+        <!-- OR -->
+        <LinearLayout
+            android:id="@+id/or_container_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/loginHelp"
-            android:textColor="@color/blue_shade"
+            android:layout_gravity="center"
+            android:layout_marginTop="50sp"
+            >
+            <View
+                android:id="@+id/beforeOr_view_id"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@drawable/or_files"
+                android:layout_marginTop="15sp"
+                />
+
+            <TextView
+                android:id="@+id/or_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/black"
+                android:layout_margin="5sp"
+                />
+
+
+            <View
+                android:id="@+id/afterOr_text_id"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@drawable/or_files"
+                android:layout_marginTop="15sp"
+                />
+        </LinearLayout>
+
+        <!-- create new account -->
+        <Button
+            android:id="@+id/createAccount_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="50sp"
+            android:text="@string/newAccount"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:background="@drawable/create_new_account_btn"
             />
+
     </LinearLayout>
 
-<!-- OR -->
-    <LinearLayout
-        android:id="@+id/or_container_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50sp"
-        >
-        <View
-            android:id="@+id/beforeOr_view_id"
-            android:layout_width="100dp"
-            android:layout_height="2dp"
-            android:background="@drawable/or_files"
-            android:layout_marginTop="15sp"
-            />
-
-        <TextView
-            android:id="@+id/or_text_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/or"
-            android:textColor="@color/black"
-            android:layout_margin="5sp"
-            />
-
-
-        <View
-            android:id="@+id/afterOr_text_id"
-            android:layout_width="100dp"
-            android:layout_height="2dp"
-            android:background="@drawable/or_files"
-            android:layout_marginTop="15sp"
-            />
-    </LinearLayout>
-    
-<!-- create new account -->
-    <Button
-        android:id="@+id/createAccount_button_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="15sp"
-        android:layout_marginEnd="15sp"
-        android:layout_marginTop="50sp"
-        android:text="@string/newAccount"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:fontFamily="monospace"
-        android:background="@drawable/create_new_account_btn"
-        />
-
-</LinearLayout>
+</ScrollView>

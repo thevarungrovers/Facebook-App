@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +14,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        forgot password
+        // on click listener | to open forgot password activity
+        TextView clickHere = (TextView) findViewById(R.id.clickHere_text_id);
+        clickHere.setOnClickListener(view -> {
+            Intent i = new Intent(MainActivity.this, forgot_password.class);
+            startActivity(i);
+        });
 
 //        create account page
         Button createAccount = findViewById(R.id.createAccount_button_id);  //  object creation and mapping id
